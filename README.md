@@ -22,3 +22,6 @@ Cada ejercicio se realizó en el mismo archivo [excercise.php](excercise.php) pe
     - Escribir una función que retorne la cadena "¡Hola, Mundo!".
     - Ejecutar el conjunto de pruebas y asegurarse de que sea exitoso.
     - Enviar tu solución y verificarla en el sitio web.
+
+- **Reverse String**:
+    Simplemente aplicarle un reverse a un string.

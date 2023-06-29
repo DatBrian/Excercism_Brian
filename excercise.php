@@ -1,12 +1,14 @@
-//? Excercise 1 (Hello World)
+//? Excercise 2 (Reverse String)
 
 
 <?php
 
-function helloWorld()
+function reverseString(string $text): string
 {
-    return "Hello, World!";
+    $reverse = strrev($text);
+    return $reverse;
 }
-echo helloWorld();
+
+reverseString("cool");
 
 ?>
