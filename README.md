@@ -95,3 +95,49 @@ Cada ejercicio se realizó en el mismo archivo [excercise.php](excercise.php) pe
     Un gigasegundo es mil millones de segundos. Es un uno seguido de nueve ceros.
 
     Si naciste el 24 de enero de 2015 a las 22:00 (10:00:00 p. m.), entonces tendrías un gigasegundo de edad el 2 de octubre de 2046 a las 23:46:40 (11:46:40 p. m.).
+
+- **Tournament**:
+    Calcula los resultados de una pequeña competencia de fútbol.
+
+    Basándote en un archivo de entrada que contiene qué equipo jugó contra qué y cuál fue el resultado, crea un archivo con una tabla como esta:
+
+    Equipo                        | PJ |  G |  E |  P |  Pts
+    Devastating Donkeys           |  3 |  2 |  1 |  0 |   7
+    Allegoric Alaskans            |  3 |  2 |  0 |  1 |   6
+    Blithering Badgers            |  3 |  1 |  0 |  2 |   3
+    Courageous Californians       |  3 |  0 |  1 |  2 |   1
+
+    ¿Qué significan estas abreviaciones?
+
+    PJ: Partidos Jugados
+    G: Partidos Ganados
+    E: Partidos Empatados
+    P: Partidos Perdidos
+    Pts: Puntos
+    Una victoria otorga 3 puntos a un equipo. Un empate otorga 1 punto. Una derrota no otorga puntos (0).
+
+    Los resultados deben estar ordenados por puntos de forma descendente. En caso de empate, los equipos se ordenan alfabéticamente.
+
+    Entrada
+    Tu programa de recuento recibirá una entrada que se verá así:
+
+    Allegoric Alaskans;Blithering Badgers;victoria
+    Devastating Donkeys;Courageous Californians;empate
+    Devastating Donkeys;Allegoric Alaskans;victoria
+    Courageous Californians;Blithering Badgers;derrota
+    Blithering Badgers;Devastating Donkeys;derrota
+    Allegoric Alaskans;Courageous Californians;victoria
+    El resultado del partido se refiere al primer equipo mencionado. Entonces, esta línea:
+
+    Allegoric Alaskans;Blithering Badgers;victoria
+    significa que los Allegoric Alaskans vencieron a los Blithering Badgers.
+
+    Esta línea:
+
+    Courageous Californians;Blithering Badgers;derrota
+    significa que los Blithering Badgers vencieron a los Courageous Californians.
+
+    Y esta línea:
+
+    Devastating Donkeys;Courageous Californians;empate
+    significa que los Devastating Donkeys y los Courageous Californians empataron.
