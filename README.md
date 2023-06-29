@@ -55,3 +55,22 @@ Cada ejercicio se realizó en el mismo archivo [excercise.php](excercise.php) pe
     para buscar el valor numérico asociado a una banda de color particular
     para listar los diferentes colores de las bandas
     Las mnemotécnicas mapean los colores a los números, que, cuando se almacenan en un arreglo, casualmente se mapean a su índice en el arreglo: Better Be Right Or Your Great Big Values Go Wrong (Es mejor estar correcto o tus grandes valores van a estar mal).
+
+- **Hamming**:
+
+    Calcula la distancia de Hamming entre dos cadenas de ADN.
+
+    Tu cuerpo está compuesto por células que contienen ADN. Estas células se desgastan regularmente y necesitan ser reemplazadas, lo cual logran dividiéndose en células hijas. De hecho, ¡el cuerpo humano promedio experimenta alrededor de 10 billones de divisiones celulares en toda una vida!
+
+    Cuando las células se dividen, su ADN también se replica. A veces, durante este proceso, ocurren errores y se codifican fragmentos de ADN con información incorrecta. Si comparamos dos cadenas de ADN y contamos las diferencias entre ellas, podemos ver cuántos errores ocurrieron. Esto se conoce como "distancia de Hamming".
+
+    Leemos el ADN utilizando las letras C, A, G y T. Dos cadenas podrían lucir así:
+
+    GAGCCTACTAACGGGAT
+    CATCGTAATGACGGCCT
+    ^ ^ ^  ^ ^    ^^
+    Tienen 7 diferencias y, por lo tanto, la distancia de Hamming es 7.
+
+    La distancia de Hamming es útil para muchas cosas en la ciencia, no solo en biología, por lo que es una frase importante de conocer :)
+
+    La distancia de Hamming solo está definida para secuencias de igual longitud, por lo que intentar calcularla entre secuencias de diferentes longitudes no debería funcionar. El manejo general de esta situación (por ejemplo, lanzar una excepción o devolver un valor especial) puede variar entre los lenguajes de programación.

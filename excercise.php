@@ -1,25 +1,20 @@
 <?php
-//? Excercise 3 (Resistor Color)
 
 declare(strict_types=1);
 
-
-define("COLORS", [
-    "black",
-    "brown",
-    "red",
-    "orange",
-    "yellow",
-    "green",
-    "blue",
-    "violet",
-    "grey",
-    "white"
-]);
-
-function colorCode(string $color): int
+function distance(string $strand1, string $strand2): int
 {
-    return array_search($color, COLORS);
-};
+    if (strlen($strand1) !== strlen($strand2)) {
+        throw new InvalidArgumentException('DNA strands must be of equal length.');
+    }
+    $hammingDistance = 0;
+    $length = strlen($strand1);
+    for ($i = 0; $i < $length; $i++) {
+        if ($strand1[$i] !== $strand2[$i]) {
+            $hammingDistance++;
+        }
+    }
+    return $hammingDistance;
+}
 
 ?>
