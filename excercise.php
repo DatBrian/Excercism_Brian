@@ -2,25 +2,25 @@
 
 declare(strict_types=1);
 
-class Bob
-{
-    public function respondTo(string $input): string
-    {
-        $input = trim($input);
-
-        if (preg_match('/^\s*$/', $input)) {
-            return "Fine. Be that way!";
-        } elseif (preg_match('/^[A-Z\s\d\W]+$/', $input) && preg_match('/[A-Z]/', $input)) {
-            if (preg_match('/\?$/', $input)) {
-                return "Calm down, I know what I'm doing!";
-            }
-            return "Whoa, chill out!";
-        } elseif (preg_match('/\?$/', $input)) {
-            return "Sure.";
+function toRna(string $dna): string {
+    $rna = '';
+    $complement = [
+        'G' => 'C',
+        'C' => 'G',
+        'T' => 'A',
+        'A' => 'U'
+    ];
+    
+    for ($i = 0; $i < strlen($dna); $i++) {
+        $nucleotide = $dna[$i];
+        if (array_key_exists($nucleotide, $complement)) {
+            $rna .= $complement[$nucleotide];
+        } else {
+            throw new InvalidArgumentException('Invalid DNA sequence.');
         }
-
-        return "Whatever.";
     }
+    
+    return $rna;
 }
 
 ?>

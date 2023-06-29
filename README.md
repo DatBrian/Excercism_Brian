@@ -205,3 +205,31 @@ Cada ejercicio se realizó en el mismo archivo [excercise.php](excercise.php) pe
     La pareja de conversación de Bob es un purista cuando se trata de comunicación escrita y siempre sigue las reglas normales de puntuación de oraciones en inglés.
 
     Las pruebas comentadas al final de bob_test.php son objetivos adicionales, son opcionales. Puede ser más fácil resolverlos si estás utilizando las funciones de mb_string, que no se instalan de forma predeterminada en cada versión de PHP.
+
+- **RNA Transcription**:
+    Trabajas para una empresa de bioingeniería especializada en el desarrollo de soluciones terapéuticas.
+
+    Tu equipo acaba de recibir un nuevo proyecto para desarrollar una terapia dirigida para un tipo raro de cáncer.
+
+    Nota
+    Todo es muy complicado, pero la idea básica es que a veces el cuerpo de las personas produce demasiada cantidad de una proteína específica. Eso puede causar todo tipo de problemas.
+
+    Pero si puedes crear una molécula muy específica (llamada micro-ARN), puedes evitar que se produzca la proteína.
+
+    Esta técnica se llama Interferencia de ARN.
+
+    Instrucciones
+    Tu tarea es determinar el complemento de ARN de una secuencia de ADN dada.
+
+    Tanto las hebras de ADN como las de ARN son una secuencia de nucleótidos.
+
+    Los cuatro nucleótidos que se encuentran en el ADN son adenina (A), citosina (C), guanina (G) y timina (T).
+
+    Los cuatro nucleótidos que se encuentran en el ARN son adenina (A), citosina (C), guanina (G) y uracilo (U).
+
+    Dada una hebra de ADN, su hebra de ARN transcrita se forma reemplazando cada nucleótido con su complemento:
+
+    G -> C
+    C -> G
+    T -> A
+    A -> U
