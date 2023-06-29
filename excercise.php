@@ -2,19 +2,24 @@
 
 declare(strict_types=1);
 
-class HighScores
-{    
-    public $scores;
-    public $latest;
-    public $personalBest;
-    public $personalTopThree = array ();
-    public function __construct(array $scores)
+class Bob
+{
+    public function respondTo(string $input): string
     {
-        $this -> scores = $scores;
-        $this -> latest = end($scores);
-        $this -> personalBest = max($scores);
-        rsort($scores);
-        $this -> personalTopThree = array_slice($scores, 0, 3);
+        $input = trim($input);
+
+        if (preg_match('/^\s*$/', $input)) {
+            return "Fine. Be that way!";
+        } elseif (preg_match('/^[A-Z\s\d\W]+$/', $input) && preg_match('/[A-Z]/', $input)) {
+            if (preg_match('/\?$/', $input)) {
+                return "Calm down, I know what I'm doing!";
+            }
+            return "Whoa, chill out!";
+        } elseif (preg_match('/\?$/', $input)) {
+            return "Sure.";
+        }
+
+        return "Whatever.";
     }
 }
 

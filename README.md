@@ -187,3 +187,21 @@ Cada ejercicio se realizó en el mismo archivo [excercise.php](excercise.php) pe
 - **High Scores**:
 
     Tu tarea es construir un componente de puntuación alta para el clásico juego Frogger, uno de los juegos más vendidos y adictivos de todos los tiempos, y un clásico de la era de los arcades. Tu tarea es escribir métodos que devuelvan la puntuación más alta de la lista, la puntuación agregada más reciente y las tres puntuaciones más altas.
+
+- **Bob**:
+
+    Bob es un adolescente despreocupado. En una conversación, sus respuestas son muy limitadas.
+
+    Bob responde "Claro." si le haces una pregunta, como "¿Cómo estás?".
+
+    Él responde "¡Whoa, cálmate!" si LE GRITAS (en mayúsculas).
+
+    Él responde "Tranquilo, ¡sé lo que estoy haciendo!" si le gritas una pregunta.
+
+    Él dice "¡Está bien, sé así!" si te diriges a él sin decir nada en realidad.
+
+    Él responde "Lo que sea." a cualquier otra cosa.
+
+    La pareja de conversación de Bob es un purista cuando se trata de comunicación escrita y siempre sigue las reglas normales de puntuación de oraciones en inglés.
+
+    Las pruebas comentadas al final de bob_test.php son objetivos adicionales, son opcionales. Puede ser más fácil resolverlos si estás utilizando las funciones de mb_string, que no se instalan de forma predeterminada en cada versión de PHP.
