@@ -25,3 +25,33 @@ Cada ejercicio se realizó en el mismo archivo [excercise.php](excercise.php) pe
 
 - **Reverse String**:
     Simplemente aplicarle un reverse a un string.
+
+- **Resistor Color**:
+    Si quieres construir algo usando una Raspberry Pi, probablemente necesitarás resistencias. Para este ejercicio, necesitas saber dos cosas sobre ellas:
+
+    Cada resistencia tiene un valor de resistencia.
+    Las resistencias son pequeñas, tan pequeñas de hecho que si imprimieras el valor de resistencia en ellas, sería difícil de leer.
+    Para resolver este problema, los fabricantes imprimen bandas de colores codificadas en las resistencias para indicar sus valores de resistencia. Cada banda tiene una posición y un valor numérico.
+
+    Las primeras 2 bandas de una resistencia tienen un esquema de codificación simple: cada color se mapea a un solo número.
+
+    En este ejercicio, vas a crear un programa útil para que no tengas que recordar los valores de las bandas.
+
+    Estos colores se codifican de la siguiente manera:
+
+    - Negro: 0
+    - Marrón: 1
+    - Rojo: 2
+    - Naranja: 3
+    - Amarillo: 4
+    - Verde: 5
+    - Azul: 6
+    - Violeta: 7
+    - Gris: 8
+    - Blanco: 9
+
+    El objetivo de este ejercicio es crear una forma:
+
+    para buscar el valor numérico asociado a una banda de color particular
+    para listar los diferentes colores de las bandas
+    Las mnemotécnicas mapean los colores a los números, que, cuando se almacenan en un arreglo, casualmente se mapean a su índice en el arreglo: Better Be Right Or Your Great Big Values Go Wrong (Es mejor estar correcto o tus grandes valores van a estar mal).

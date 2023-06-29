@@ -1,14 +1,25 @@
-//? Excercise 2 (Reverse String)
-
-
 <?php
+//? Excercise 3 (Resistor Color)
 
-function reverseString(string $text): string
+declare(strict_types=1);
+
+
+define("COLORS", [
+    "black",
+    "brown",
+    "red",
+    "orange",
+    "yellow",
+    "green",
+    "blue",
+    "violet",
+    "grey",
+    "white"
+]);
+
+function colorCode(string $color): int
 {
-    $reverse = strrev($text);
-    return $reverse;
-}
-
-reverseString("cool");
+    return array_search($color, COLORS);
+};
 
 ?>
