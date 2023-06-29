@@ -2,25 +2,28 @@
 
 declare(strict_types=1);
 
-function toRna(string $dna): string {
-    $rna = '';
-    $complement = [
-        'G' => 'C',
-        'C' => 'G',
-        'T' => 'A',
-        'A' => 'U'
-    ];
-    
-    for ($i = 0; $i < strlen($dna); $i++) {
-        $nucleotide = $dna[$i];
-        if (array_key_exists($nucleotide, $complement)) {
-            $rna .= $complement[$nucleotide];
-        } else {
-            throw new InvalidArgumentException('Invalid DNA sequence.');
-        }
+function isValid(string $number): bool
+{
+    $number = str_replace(' ', '', $number);
+
+    if (strlen($number) <= 1 || !ctype_digit($number)) {
+        return false;
     }
-    
-    return $rna;
+
+    $sum = 0;
+    $digits = str_split(strrev($number));
+
+    foreach ($digits as $key => $digit) {
+        if ($key % 2 === 1) {
+            $digit *= 2;
+            if ($digit > 9) {
+                $digit -= 9;
+            }
+        }
+        $sum += $digit;
+    }
+
+    return $sum % 10 === 0;
 }
 
 ?>

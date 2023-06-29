@@ -233,3 +233,37 @@ Cada ejercicio se realizó en el mismo archivo [excercise.php](excercise.php) pe
     C -> G
     T -> A
     A -> U
+
+- **Luhn**:
+
+    Dado un número, determina si es válido según la fórmula de Luhn.
+
+    El algoritmo de Luhn es una fórmula de suma de verificación simple utilizada para validar una variedad de números de identificación, como los números de tarjetas de crédito y los Números de Seguro Social en Canadá.
+
+    La tarea es verificar si una cadena dada es válida.
+
+    Validación de un número
+    Las cadenas de longitud igual o menor a 1 no son válidas. Se permiten espacios en la entrada, pero deben eliminarse antes de la verificación. Todos los demás caracteres que no sean dígitos están prohibidos.
+
+    Ejemplo 1: número de tarjeta de crédito válido
+    4539 3195 0343 6467
+    El primer paso del algoritmo de Luhn es duplicar cada segundo dígito, comenzando desde la derecha. Duplicaremos
+
+    4_3_ 3_9_ 0_4_ 6_6_
+    Si el doble del número resulta en un número mayor que 9, entonces se resta 9 del producto. Los resultados de nuestra duplicación son:
+
+    8569 6195 0383 3437
+    Luego, sumamos todos los dígitos:
+
+    8+5+6+9+6+1+9+5+0+3+8+3+3+4+3+7 = 80
+    Si la suma es divisible de manera uniforme por 10, entonces el número es válido. ¡Este número es válido!
+
+    Ejemplo 2: número de tarjeta de crédito inválido
+    8273 1232 7352 0569
+    Duplicamos los segundos dígitos, comenzando desde la derecha:
+
+    7253 2262 5312 0539
+    Sumamos los dígitos:
+
+    7+2+5+3+2+2+6+2+5+3+1+2+0+5+3+9 = 57
+    57 no es divisible de manera uniforme por 10, por lo que este número no es válido.
