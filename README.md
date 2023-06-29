@@ -183,3 +183,7 @@ Cada ejercicio se realizó en el mismo archivo [excercise.php](excercise.php) pe
 
     Extensiones:
     Los cifrados por desplazamiento funcionan al hacer que el texto sea ligeramente extraño, pero son vulnerables al análisis de frecuencia. Los cifrados por sustitución ayudan con eso, pero aún son muy vulnerables cuando la clave es corta o si se preservan los espacios. Más adelante, verás una solución a este problema en el ejercicio "crypto-square".
+
+- **High Scores**:
+
+    Tu tarea es construir un componente de puntuación alta para el clásico juego Frogger, uno de los juegos más vendidos y adictivos de todos los tiempos, y un clásico de la era de los arcades. Tu tarea es escribir métodos que devuelvan la puntuación más alta de la lista, la puntuación agregada más reciente y las tres puntuaciones más altas.
