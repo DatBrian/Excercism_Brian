@@ -74,3 +74,24 @@ Cada ejercicio se realizó en el mismo archivo [excercise.php](excercise.php) pe
     La distancia de Hamming es útil para muchas cosas en la ciencia, no solo en biología, por lo que es una frase importante de conocer :)
 
     La distancia de Hamming solo está definida para secuencias de igual longitud, por lo que intentar calcularla entre secuencias de diferentes longitudes no debería funcionar. El manejo general de esta situación (por ejemplo, lanzar una excepción o devolver un valor especial) puede variar entre los lenguajes de programación.
+
+- **Gigasecond**:
+    La forma en que medimos el tiempo es un tanto confusa. Tenemos 60 segundos en un minuto y 60 minutos en una hora. Esto proviene de la antigua Babilonia, donde utilizaban 60 como base para su sistema numérico. Tenemos 24 horas en un día, 7 días en una semana, ¿y cuántos días en un mes? Bueno, la cantidad de días en un mes depende no solo del mes en sí, sino también del tipo de calendario que se utiliza en el país en el que vives.
+
+    ¿Qué tal si, en cambio, utilizamos solo segundos para expresar intervalos de tiempo? Entonces podemos utilizar los prefijos del sistema métrico para escribir grandes cantidades de segundos de una manera más comprensible.
+
+    Una receta de cocina podría indicar que debes dejar que los brownies se cocinen en el horno durante dos kilosegundos (eso es dos mil segundos).
+    Quizás tú y tu familia viajen a algún lugar exótico durante dos megasegundos (eso son dos millones de segundos).
+    Y si tú y tu cónyuge estuvieron casados durante mil millones de segundos, celebrarían su aniversario de un gigasegundo.
+
+    **Nota**:
+    Si alguna vez colonizamos Marte u otro planeta, medir el tiempo se volverá aún más confuso. Si alguien dice "año", ¿se refieren a un año en la Tierra o a un año en Marte?
+
+    La idea de este ejercicio proviene de la novela de ciencia ficción "Un abismo en el cielo" del autor Vernor Vinge. En ella, el autor utiliza el sistema métrico como base para las medidas de tiempo.
+
+    Instrucciones
+    Tu tarea es determinar la fecha y hora un gigasegundo después de una fecha específica.
+
+    Un gigasegundo es mil millones de segundos. Es un uno seguido de nueve ceros.
+
+    Si naciste el 24 de enero de 2015 a las 22:00 (10:00:00 p. m.), entonces tendrías un gigasegundo de edad el 2 de octubre de 2046 a las 23:46:40 (11:46:40 p. m.).
