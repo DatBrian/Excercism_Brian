@@ -267,3 +267,17 @@ Cada ejercicio se realizó en el mismo archivo [excercise.php](excercise.php) pe
 
     7+2+5+3+2+2+6+2+5+3+1+2+0+5+3+9 = 57
     57 no es divisible de manera uniforme por 10, por lo que este número no es válido.
+
+- **Isogram**:
+
+    Determina si una palabra o frase es un isograma.
+
+    Un isograma (también conocido como una "palabra sin patrón") es una palabra o frase sin letras repetidas, aunque se permiten que aparezcan múltiples espacios y guiones.
+
+    Ejemplos de isogramas:
+
+    lumberjacks
+    background
+    downstream
+    six-year-old
+    Sin embargo, la palabra isograms no es un isograma, porque la letra "s" se repite.

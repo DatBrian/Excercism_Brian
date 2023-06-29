@@ -2,28 +2,22 @@
 
 declare(strict_types=1);
 
-function isValid(string $number): bool
-{
-    $number = str_replace(' ', '', $number);
+function isIsogram(string $word): bool {
+    $letters = [];
+    $word = mb_strtolower($word);
 
-    if (strlen($number) <= 1 || !ctype_digit($number)) {
-        return false;
-    }
+    for ($i = 0; $i < mb_strlen($word); $i++) {
+        $char = mb_substr($word, $i, 1);
 
-    $sum = 0;
-    $digits = str_split(strrev($number));
-
-    foreach ($digits as $key => $digit) {
-        if ($key % 2 === 1) {
-            $digit *= 2;
-            if ($digit > 9) {
-                $digit -= 9;
+        if ($char !== ' ' && $char !== '-') {
+            if (isset($letters[$char])) {
+                return false;
             }
+            $letters[$char] = true;
         }
-        $sum += $digit;
     }
 
-    return $sum % 10 === 0;
+    return true;
 }
 
 ?>
