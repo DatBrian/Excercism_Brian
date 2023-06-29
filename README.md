@@ -141,3 +141,45 @@ Cada ejercicio se realizó en el mismo archivo [excercise.php](excercise.php) pe
 
     Devastating Donkeys;Courageous Californians;empate
     significa que los Devastating Donkeys y los Courageous Californians empataron.
+
+- **Simple Cipher**:
+    Instrucciones:
+    Implementa un cifrado por desplazamiento simple como el Cifrado César y un cifrado por sustitución más seguro.
+
+    Paso 1:
+    "Si tenía algo confidencial que decir, lo escribía en clave, es decir, cambiando el orden de las letras del alfabeto de tal manera que no se pudiera formar ninguna palabra. Si alguien desea descifrarlos y comprender su significado, debe sustituir la cuarta letra del alfabeto, es decir, D, por A, y así sucesivamente con las demás letras". - Suetonio, Vida de Julio César
+
+    Los cifrados son algoritmos muy sencillos que nos permiten renderizar el texto menos legible, pero que aún permiten un descifrado fácil. Son vulnerables a muchas formas de criptoanálisis, pero tenemos suerte de que, en general, nuestras hermanas pequeñas no sean criptoanalistas.
+
+    El Cifrado César se utilizaba para algunos mensajes de Julio César que se enviaban lejos. Julio César sabía que el cifrado no era muy bueno, pero tenía una ventaja en ese aspecto: casi nadie sabía leer bien. Por lo tanto, incluso estar un par de letras fuera de lugar era suficiente para que la gente no pudiera reconocer las pocas palabras que conocían.
+
+    Tu tarea es crear un cifrado por desplazamiento simple, como el Cifrado César. Esta imagen es un gran ejemplo del Cifrado César:
+
+    [Cifrado César](https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar#/media/Archivo:Caesar_cipher_left_shift_of_3.svg)
+
+    Por ejemplo:
+
+    Dando "iamapandabear" como entrada a la función de codificación (encode) devuelve el cifrado "ldpdsdqgdehdu". Lo suficientemente oscuro para mantener nuestro mensaje en secreto durante el tránsito.
+
+    Cuando "ldpdsdqgdehdu" se introduce en la función de decodificación (decode), devolvería el original "iamapandabear", permitiendo que tu amigo lea tu mensaje original.
+
+    Paso 2:
+    Sin embargo, los cifrados por desplazamiento no son divertidos cuando tu hermana menor lo descubre. Intenta modificar el código para permitirnos especificar una clave y usarla como distancia de desplazamiento. Esto se llama un cifrado por sustitución.
+
+    Aquí tienes un ejemplo:
+
+    Dada la clave "aaaaaaaaaaaaaaaaaa", codificar la cadena "iamapandabear" devolvería el original "iamapandabear".
+
+    Dada la clave "ddddddddddddddddd", codificar nuestra cadena "iamapandabear" devolvería la versión oscurecida "ldpdsdqgdehdu".
+
+    En el ejemplo anterior, hemos establecido a = 0 para el valor de la clave. Entonces, cuando se añade el texto plano a la clave, obtenemos el mismo mensaje de salida. Por lo tanto, "aaaa" no es una clave ideal. Pero si establecemos la clave en "dddd", obtendríamos lo mismo que en el Cifrado César.
+
+    Paso 3:
+    El eslabón más débil en cualquier cifrado es el ser humano. Hagamos que tu cifrado por sustitución sea un poco más tolerante a errores al proporcionar una fuente de aleatoriedad y asegurarnos de que la clave cont
+
+    enga solo letras minúsculas.
+
+    Si alguien no presenta una clave en absoluto, genera una clave verdaderamente aleatoria de al menos 100 caracteres alfanuméricos de longitud.
+
+    Extensiones:
+    Los cifrados por desplazamiento funcionan al hacer que el texto sea ligeramente extraño, pero son vulnerables al análisis de frecuencia. Los cifrados por sustitución ayudan con eso, pero aún son muy vulnerables cuando la clave es corta o si se preservan los espacios. Más adelante, verás una solución a este problema en el ejercicio "crypto-square".
